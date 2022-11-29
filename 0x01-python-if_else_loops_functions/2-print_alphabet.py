@@ -1,2 +1,5 @@
-2-print_alphabet.py
-
+#!/usr/bin/python3
+res = ""
+for alaphabet in range(97, 123):
+    res = chr(alaphabet)
+    print("{}".format(res), end='')
