@@ -2,5 +2,5 @@
 '''
 write an empth square
 '''
-class Square
+class Square:
     pass
