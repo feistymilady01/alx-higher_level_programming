@@ -1,1 +1,66 @@
-w;nrn
+The ``add_integer`` module
+
+===========================
+
+Using ``add_integer``
+
+--------------------
+
+First import add_integer from the 0-add_integer module:
+
+	>>> sum = __import__('0-add_integer').add_integer
+
+Now use it:
+
+	>>> sum(1, 2)
+	3
+
+	>>> sum(100, -2)
+	98
+
+	>>> sum(2)
+	100
+
+	>>> sum(10.5, 2.5)
+	12
+
+	>>> sum(12.76, 8)
+	20
+
+	>>> sum(-12, -0)
+	-12
+
+	>>> sum(float(20.6))
+	118
+
+	>>> sum(16, "School")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> sum(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> sum("Alx", "School")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> sum(15, [1, 2, 3])
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> sum()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+	>>> sum(12, [1, 2, 3])
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> sum(float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+	>>> sum(1000e1000)
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
