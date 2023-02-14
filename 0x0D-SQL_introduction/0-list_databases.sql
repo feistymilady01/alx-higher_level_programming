@@ -1,2 +1,2 @@
-iii<M-S-F3>:wq
-
+-- List all database of MySQL server
+SHOW DATABASES
