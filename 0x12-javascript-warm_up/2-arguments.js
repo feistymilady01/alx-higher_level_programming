@@ -1,16 +1,8 @@
 #!/usr/bin/node
+const argc = process.argv.length;
 
-const args = process.argv;
-const length = args.length;
-
-switch (length) {
-  case 2:
-    console.log('No argument');
-    break;
-  case 3:
-    console.log('Argument found');
-    break;
-  default:
-    console.log('Arguments found');
-    break;
+if (argc > 2) {
+  console.log('Argument' + (argc > 3 ? 's' : '') + ' found');
+} else {
+  console.log('No argument');
 }
